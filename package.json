@@ -2,7 +2,8 @@
   "name": "ngx-enhance-credit-cards",
   "version": "1.0.11",
   "description": "A Credit Card Directives and Reactive Form Validators package for Angular X (4+)",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && ngc build -p ./tsconfig.json",
