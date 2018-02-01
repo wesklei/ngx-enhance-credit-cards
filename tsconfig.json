@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "declaration": true,
     "module": "commonjs",
+    "sourceMap": true,
     "moduleResolution": "node",
-	"sourceMap": true,
-	"declaration": true,
-    "inlineSources": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noEmitHelpers": false,
-    "baseUrl": "./",
+    "noImplicitAny": false,
+	"rootDir": ".",
     "paths": {
       "payment": [ "node_modules/payment" ]
     },
@@ -17,17 +16,13 @@
       "es6",
       "dom"
     ],
-    "types": [
-      "jasmine",
-      "node"
-    ]
+    "types": ["dist/index.d.ts"],
+	"outDir": "dist",
+    "baseUrl": "src"
   },
-  "files": [
-    "index.ts"
-  ],
   "angularCompilerOptions": {
     "genDir": "dist",
     "skipMetadataEmit": true,
-    "entryModule": "./ngxcreditcard.module#AppModule"
+    "entryModule": "./src/ngxcreditcard.module#AppModule"
   }
 }

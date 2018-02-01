@@ -2,13 +2,12 @@
   "name": "ngx-enhance-credit-cards",
   "version": "1.0.15",
   "description": "A Credit Card Directives and Reactive Form Validators package for Angular X (4+)",
-  "main": "index.js",
-  "typings": "index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf build && ngc build -p ./tsconfig.json",
-    "prepublish": "npm run build",
-    "packagr": "ng-packagr -p ng-package.json"
+    "build": "rm -rf dist && ngc build -p ./tsconfig.json",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -57,7 +56,6 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
-    "ng-packagr": "^2.0.0-rc.6",
     "protractor": "~4.0.13",
     "rxjs": "^5.0.1",
     "ts-node": "1.2.1",
