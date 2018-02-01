@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf build && ngc build -p ./tsconfig.json",
-    "prepublish": "tsc",
+    "prepublish": "npm run build",
     "packagr": "ng-packagr -p ng-package.json"
   },
   "repository": {
