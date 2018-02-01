@@ -16,7 +16,6 @@
       "es6",
       "dom"
     ],
-    "types": ["dist/index.d.ts"],
 	"outDir": "dist",
     "baseUrl": "src"
   },
