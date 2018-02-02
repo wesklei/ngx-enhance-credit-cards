@@ -1,6 +1,6 @@
 {
   "name": "ngx-enhance-credit-cards",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Credit Card Directives and Reactive Form Validators package for Angular X (4+)",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
