@@ -18,10 +18,16 @@
     ],
 	"outDir": "dist",
     "baseUrl": "src"
-  },
+  },  
+  "files": [
+    "index.ts"
+  ],
   "angularCompilerOptions": {
+	"skipTemplateCodegen": true,
+	"skipMetadataEmit": false,
+	"strictMetadataEmit": true,
+	"annotationsAs": "decorators",
     "genDir": "dist",
-    "skipMetadataEmit": true,
-    "entryModule": "./src/ngxcreditcard.module#AppModule"
+    "entryModule": "./src/ngxcreditcard.module#NgXCreditCardsModule"
   }
 }
