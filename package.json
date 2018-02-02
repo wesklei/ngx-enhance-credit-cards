@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && tsc && ngc build -p ./tsconfig.json",
+    "build": "rm -rf dist && ngc build -p ./tsconfig.json",
     "prepublish": "npm run build"
   },
   "repository": {
