@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thewarefly/ngx-enhance-credit-cards.git"
+    "url": "git+https://github.com/wesklei/ngx-enhance-credit-cards.git"
   },
   "keywords": [
     "angular",
@@ -69,7 +69,7 @@
   "author": "Rok Knez <rok@zenk.si> (http://zenk.si)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thewarefly/ngx-enhance-credit-cards/issues"
+    "url": "https://github.com/wesklei/ngx-enhance-credit-cards/issues"
   },
-  "homepage": "https://github.com/thewarefly/ngx-enhance-credit-cards#readme"
+  "homepage": "https://github.com/wesklei/ngx-enhance-credit-cards#readme"
 }
