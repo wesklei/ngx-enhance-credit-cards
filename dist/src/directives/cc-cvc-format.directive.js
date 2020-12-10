@@ -1,9 +1,17 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CCCvcFormatDirective = void 0;
 var core_1 = require("@angular/core");
 var Payment = require("payment");
-var i0 = require("@angular/core");
 var CCCvcFormatDirective = /** @class */ (function () {
     function CCCvcFormatDirective(el) {
         this.el = el;
@@ -12,15 +20,13 @@ var CCCvcFormatDirective = /** @class */ (function () {
         Payment.formatCardCVC(element);
         Payment.restrictNumeric(element);
     }
-    CCCvcFormatDirective.ɵfac = function CCCvcFormatDirective_Factory(t) { return new (t || CCCvcFormatDirective)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
-    CCCvcFormatDirective.ɵdir = i0.ɵɵdefineDirective({ type: CCCvcFormatDirective, selectors: [["", "ccCvc", ""]] });
+    CCCvcFormatDirective = __decorate([
+        core_1.Directive({
+            selector: '[ccCvc]'
+        }),
+        __metadata("design:paramtypes", [core_1.ElementRef])
+    ], CCCvcFormatDirective);
     return CCCvcFormatDirective;
 }());
 exports.CCCvcFormatDirective = CCCvcFormatDirective;
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(CCCvcFormatDirective, [{
-        type: core_1.Directive,
-        args: [{
-                selector: '[ccCvc]'
-            }]
-    }], function () { return [{ type: i0.ElementRef }]; }, null); })();
 //# sourceMappingURL=cc-cvc-format.directive.js.map

@@ -1,11 +1,16 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NgXCreditCardsModule = void 0;
 var core_1 = require("@angular/core");
 var cc_number_format_directive_1 = require("./directives/cc-number-format.directive");
 var cc_expiry_format_directive_1 = require("./directives/cc-expiry-format.directive");
 var cc_cvc_format_directive_1 = require("./directives/cc-cvc-format.directive");
-var i0 = require("@angular/core");
 var CC_DIRECTIVES = [
     cc_number_format_directive_1.CCNumberFormatDirective,
     cc_expiry_format_directive_1.CCExpiryFormatDirective,
@@ -14,21 +19,13 @@ var CC_DIRECTIVES = [
 var NgXCreditCardsModule = /** @class */ (function () {
     function NgXCreditCardsModule() {
     }
-    NgXCreditCardsModule.ɵmod = i0.ɵɵdefineNgModule({ type: NgXCreditCardsModule });
-    NgXCreditCardsModule.ɵinj = i0.ɵɵdefineInjector({ factory: function NgXCreditCardsModule_Factory(t) { return new (t || NgXCreditCardsModule)(); } });
+    NgXCreditCardsModule = __decorate([
+        core_1.NgModule({
+            declarations: [CC_DIRECTIVES],
+            exports: [CC_DIRECTIVES]
+        })
+    ], NgXCreditCardsModule);
     return NgXCreditCardsModule;
 }());
 exports.NgXCreditCardsModule = NgXCreditCardsModule;
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(NgXCreditCardsModule, { declarations: [cc_number_format_directive_1.CCNumberFormatDirective,
-        cc_expiry_format_directive_1.CCExpiryFormatDirective,
-        cc_cvc_format_directive_1.CCCvcFormatDirective], exports: [cc_number_format_directive_1.CCNumberFormatDirective,
-        cc_expiry_format_directive_1.CCExpiryFormatDirective,
-        cc_cvc_format_directive_1.CCCvcFormatDirective] }); })();
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NgXCreditCardsModule, [{
-        type: core_1.NgModule,
-        args: [{
-                declarations: [CC_DIRECTIVES],
-                exports: [CC_DIRECTIVES]
-            }]
-    }], null, null); })();
 //# sourceMappingURL=ngxcreditcard.module.js.map
